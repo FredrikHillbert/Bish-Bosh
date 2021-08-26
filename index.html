@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css" >
+
+</head>
+
+<body>
+
+    <h1 >Bish-Bosh 2.0</h1>
+    <p>Bish-Bosh listar tal mellan 1 och det du väljer nedan().
+        <br>Om talet är jämnt delbart med ditt valda bish-tal() visas 'Bish' istället för talet.
+        <br>Om talet är jämnt delbart med ditt valda bosh-tal() visas 'Bosh' istället för talet.
+        <br>Om talet är jämt delbart med båda dina tal visas 'Bish-Bosh'.
+    </p>
+
+    <label for="nummer">Antal nummer:</label>
+    <input type="range" id="rangeNumbers" min="1" max="100" value="1" oninput="buildNumbers(),this.nextElementSibling.value = this.value">
+    <output name="numbers" for="rangeNumbers">0</output>
+    <br>
+    <label for="bish">Bish nummer:</label>
+    <input type="range" id="bish"min="1" max="100" value="1" oninput="buildNumbers(),this.nextElementSibling.value = this.value">
+    <output name="Bish" for="bish">0</output>
+    <br>
+    <label for="bosh">Bosh nummer:</label>
+    <input type="range" id="bosh" min="1" max="100" value="1" oninput="buildNumbers(),this.nextElementSibling.value = this.value">   
+    <output name="Bosh" for="bosh">0</output>
+    
+    <!-- change numbers ends here!!-->
+
+
+    <div class="wrapper" id="divNumbers">
+
+
+
+
+
+    </div>
+  
+
+
+</body>
+<script src="app.js"></script>
+</html>
